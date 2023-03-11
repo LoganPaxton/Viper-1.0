@@ -9,9 +9,9 @@ time.sleep(1)
 
 detection = False
 
-malicious = ("rd c:\system32", "del c:\", "rd c:\")
+malicious = ("rd c:\system32", "del c:\,", ",rd c:\,")
 
-filename = input("Batch File >> ")
+filename = input("File >> ")
 fs = open(filename, 'r')
 batch = fs.read()
 fs.close()
